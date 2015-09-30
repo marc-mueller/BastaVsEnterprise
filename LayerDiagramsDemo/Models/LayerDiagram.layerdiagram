@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="2a154078-8326-46d4-8399-44c2c75bc842" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="9f95c456-522d-497f-b553-db61a11f0e25" name="Frontend&#xD;&#xA;">
+      <references>
+        <reference Id="025a1343-5bb5-47aa-9df7-96b2d2290518" name="Frontend">
+          <ArtifactNode Label="Frontend" Category="CodeSchema_Project" Id="(Assembly=../Frontend/Frontend.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Frontend)" Label="Frontend.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="8f197bc1-48ba-49f2-bfe5-58bcb88c8d8a" name="Business&#xD;&#xA;">
+      <references>
+        <reference Id="d0f42a45-e2e9-4b93-92e9-c465e23006be" name="BusinessLogic">
+          <ArtifactNode Label="BusinessLogic" Category="CodeSchema_Project" Id="(Assembly=../BusinessLogic/BusinessLogic.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=BusinessLogic)" Label="BusinessLogic.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="698479fd-e471-4cee-92c6-0c498232ac88" name="DAL&#xD;&#xA;">
+      <references>
+        <reference Id="445e8f50-bd76-45f4-96c8-3213d4d77e49" name="DataAccess">
+          <ArtifactNode Label="DataAccess" Category="CodeSchema_Project" Id="(Assembly=../DataAccess/DataAccess.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DataAccess)" Label="DataAccess.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
